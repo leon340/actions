@@ -7,25 +7,25 @@ jobs:
     name: Print date on ubuntu runner
     runs-on: ubuntu-latest
     steps:
-    - run: echo date
+    - run: date
 
   windows-date:
     name: Print date on windows server
     runs-on: windows-latest
     steps:
-    - run: echo Get-Date
+    - run: Get-Date
 
   macos-date:
     name: Print date on mac
     runs-on: macos-latest
     steps:
-    - run: echo date
+    - run: date
 
   my-date:
     name: Print date dependency
     needs: [ubuntu-date, windows-date, macos-date]
     runs-on: ubuntu-latest
     steps:
-    - run: echo date
+    - run: date
   
     
