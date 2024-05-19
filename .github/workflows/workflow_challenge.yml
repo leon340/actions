@@ -1,5 +1,5 @@
 name: Workflow Challenge
-on: push
+on: []
 
 jobs:
 
